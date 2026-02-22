@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya Bet | Data Scientist</title>
+
+  <!-- Swiper & Style -->
+  <link rel="stylesheet" href="Libraries/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="Css/style.css" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/9b634c15bd.js" crossorigin="anonymous"></script>
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav-logo">Aditya Bet</a>
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list grid">
+          <li class="nav-item"><a href="#home" class="nav-link"><i class="fa-solid fa-house nav-icon"></i> Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link"><i class="fa-solid fa-user nav-icon"></i> About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link"><i class="fa-solid fa-file nav-icon"></i> Skills</a></li>
+          <li class="nav-item"><a href="#portfolio" class="nav-link"><i class="fa-solid fa-image nav-icon"></i> Projects</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link"><i class="fa-solid fa-message nav-icon"></i> Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-xmark nav-close" id="nav-close"></i>
+      </div>
+      <div class="nav-btns">
+        <i class="fa-regular fa-moon change-theme" id="theme-button"></i>
+        <div class="nav-toggle" id="nav-toggle"><i class="fa-solid fa-bars"></i></div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+    <!-- Home -->
+<section class="home section" id="home" data-aos="fade-up">
+  <div class="home-container container grid">
+    <div class="home-content grid">
+      <div class="home-social">
+        <a href="https://linkedin.com/in/aditya-bet-592372219" target="_blank" class="home-social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/aditya_bet_._/?hl=en" target="_blank" class="home-social-icon"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/adityabet" target="_blank" class="home-social-icon"><i class="fa-brands fa-github"></i></a>
+        <a href="https://wa.me/917083353166?text=Hi%20Aditya%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" class="home-social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+
+      <div class="home-img">
+        <img src="Assets/Icons/logo1.png" alt="Aditya Bet" class="home-blob-img" />
+      </div>
+
+      <div class="home-data">
+        <h1 class="home-title">Hi, I am Aditya Bet</h1>
+        <h3 class="home-subtitle">
+          <span id="typed-role"></span>
+        </h3>
+        <p class="home-description">
+          Passionate Data Scientist skilled in Python, SQL, Power BI, Tableau, and more. I transform data into actionable insights to drive business decisions.
+        </p>
+        <a href="#contact" class="button button-flex">Contact Me <i class="fa-regular fa-envelope button-icon"></i></a>
+      </div>
+    </div>
+
+    <div class="home-scroll">
+      <a href="#about" class="home-scroll-button button-flex">
+        <img class="home-scroll-mouse" src="Assets/mouse.svg" alt="mouse" />
+        <span class="home-scroll-name">Scroll down</span>
+        <i class="fa-solid fa-angles-down home-scroll-arrow"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Typed.js Script -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed("#typed-role", {
+    strings: ["Data Scientist", "Data Analyst", "SQL Developer", "Power BI Developer"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    backDelay: 1500,
+    loop: true
+  });
+</script>
+
+    <!-- About -->
+    <section class="about section" id="about" data-aos="fade-up">
+      <h2 class="section-title">About Me</h2>
+      <span class="section-subtitle">My Introduction</span>
+      <div class="about-container container grid" style="align-items: center;">
+        <img src="Assets/Icons/aboutimg.png" alt="Aditya Bet" class="about-img" />
+        <div class="about-data" style="text-align: center;">
+          <p class="about-description">
+            I’m a results-driven Data Scientist experienced in Python, SQL, Power BI, and Tableau.
+            I enjoy solving real-world problems using data-driven strategies and predictive models.
+            Passionate about continuous learning and creating intuitive dashboards.
+          </p>
+          <div class="about-info" style="justify-content: center; gap: 2rem;">
+          <div>
+           <span class="about-info-title">1+</span>
+           <span class="about-info-name">Years<br />experience</span>
+          </div>
+          <div>
+            <span class="about-info-title">5+</span>
+            <span class="about-info-name">Completed<br />projects</span>
+          </div>
+          <div>
+           <span class="about-info-title">5+</span>
+           <span class="about-info-name">Certificate<br />Earn</span>
+          </div>
+        </div>
+
+          <div class="about-buttons" style="margin-top: 1.5rem; text-align: center;">
+  <a href="Aditya_Bet_Resume.pdf"
+     target="_blank"
+     onclick="downloadResume()"
+     class="button button-flex"
+     style="background-color: #8326c5; color: white; padding: 0.8rem 1.6rem; border-radius: 8px; font-size: 1rem; font-weight: 500; display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; transition: background 0.3s ease;">
+    Download Resume
+    <i class="fa-solid fa-file-arrow-down button-icon" style="font-size: 1.2rem;"></i>
+  </a>
+</div>
+
+<script>
+function downloadResume() {
+  const link = document.createElement('a');
+  link.href = 'Aditya_Bet_Resume.pdf';
+  link.download = 'Aditya_Bet_Resume.pdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+</script>
+
+
+    </section>
+
+    <!-- Skills -->
+    <section class="skills section" id="skills" data-aos="fade-up">
+      <h2 class="section-title">Skills</h2>
+      <span class="section-subtitle">My Technical Skills</span>
+      <div class="skills-content container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; text-align: center;">
+        <div class="skills-name">Python</div>
+        <div class="skills-name">SQL</div>
+        <div class="skills-name">Power BI</div>
+        <div class="skills-name">Tableau</div>
+        <div class="skills-name">Excel</div>
+        <div class="skills-name">Jupyter Notebook</div>
+        <div class="skills-name">Scikit-learn</div>
+        <div class="skills-name">Pandas</div>
+        <div class="skills-name">Matplotlib</div>
+        <div class="skills-name">Seaborn</div>
+        <div class="skills-name">MySQL</div>
+        <div class="skills-name">PostgreSQL</div>
+      </div>
+    </section>
+
+    <!-- Qualification -->
+    <section class="qualification section" data-aos="fade-up">
+      <h2 class="section-title">Qualification</h2>
+      <span class="section-subtitle">My journey</span>
+      <div class="qualification-container container" style="display: flex; justify-content: center;">
+        <div class="qualification-tabs">
+          <div class="qualification-button button-flex qualification-active" data-target="#education">
+            <i class="fa-solid fa-graduation-cap qualification-icon"></i> Education
+          </div>
+        </div>
+      </div>
+      <div class="qualification-section" style="display: flex; justify-content: center;">
+        <div class="qualification-content qualification-active" data-content id="education">
+          <div class="qualification-data">
+            <div>
+              <h3 class="qualification-title">Bachelor in Computer Science</h3>
+              <span class="qualification-subtitle">Savitribai Phule Pune University</span>
+              <div class="qualification-date"><i class="fa-solid fa-calendar-days"></i> 2022 - 2025</div>
+            </div>
+            <div><span class="qualification-round"></span><span class="qualification-line"></span></div>
+          </div>
+          <div class="qualification-data">
+            <div></div>
+            <div><span class="qualification-round"></span></div>
+            <div>
+              <h3 class="qualification-title">Data Scientist</h3>
+              <span class="qualification-subtitle">IT Vedant Institute</span>
+              <div class="qualification-date"><i class="fa-solid fa-calendar-days"></i> Pursuing</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Portfolio -->
+<section class="portfolio section" id="portfolio" data-aos="zoom-in-up">
+  <h2 class="section-title">Projects</h2>
+  <span class="section-subtitle">Most recent work</span>
+  <div class="portfolio-container container swiper-container">
+    <div class="swiper-wrapper" style="text-align: center;">
+      
+      <!-- Project 1: Zomato Insights -->
+      <div class="portfolio-content grid swiper-slide">
+        <img src="Assets/project_1.jpeg" alt="Zomato SQL Project" class="portfolio-img" />
+        <div class="portfolio-data">
+          <h3 class="portfolio-title">Zomato Data – SQL Insights</h3>
+          <p class="portfolio-description">
+            Built a complete SQL project to analyze customer behavior, restaurant performance, and order patterns.  
+            Developed advanced queries for revenue insights, delivery analysis, and rating trends across 10,000+ rows.
+          </p>
+          <a href="https://github.com/adityabet/Zomato-Insights" target="_blank" class="button button-flex button-small portfolio-button">
+            View Project
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 2: Cab Booking -->
+      <div class="portfolio-content grid swiper-slide">
+        <img src="Assets/project_2.jpeg" alt="Cab Booking SQL Project" class="portfolio-img" />
+        <div class="portfolio-data">
+          <h3 class="portfolio-title">Cab Booking System – SQL Project</h3>
+          <p class="portfolio-description">
+            Designed and implemented a relational database with 6 interconnected tables for managing customers, drivers, cabs, bookings, trips, and feedback.  
+            Wrote complex SQL queries for customer analysis, driver performance, and revenue optimization.
+          </p>
+          <a href="https://github.com/adityabet/cab_booking" target="_blank" class="button button-flex button-small portfolio-button">
+            View Project
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 3: Fraud Detection in Bank -->
+      <div class="portfolio-content grid swiper-slide">
+        <img src="Assets/project_3.jpeg" alt="Fraud Detection in Banking SQL Project" class="portfolio-img" />
+        <div class="portfolio-data">
+          <h3 class="portfolio-title">Fraud Detection in Banking – SQL Project</h3>
+          <p class="portfolio-description">
+            Created a fraud detection system using SQL with multiple datasets.  
+            Applied joins, subqueries, and window functions to identify suspicious transactions, customer risk behavior, and fraud trends.
+          </p>
+          <a href="https://github.com/adityabet/Fraud_Detection_Bank" target="_blank" class="button button-flex button-small portfolio-button">
+            View Project
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 4: Weather Forecasting Dashboard -->
+      <div class="portfolio-content grid swiper-slide">
+        <img src="Assets/project_4.png" alt="Weather Forecasting Dashboard Power BI" class="portfolio-img" />
+        <div class="portfolio-data">
+          <h3 class="portfolio-title">Weather Forecasting Dashboard – Power BI</h3>
+          <p class="portfolio-description">
+            Developed an interactive Power BI dashboard for real-time weather forecasting using live API data.  
+            Visualized temperature trends, humidity levels, and climatic variations with dynamic charts and KPIs.
+          </p>
+          <a href="https://github.com/adityabet/Weather-Forcasting-Dashboard-Power-BI-" target="_blank" class="button button-flex button-small portfolio-button">
+            View Project
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 5: Nasdaq 100 Forex Market Analysis -->
+      <div class="portfolio-content grid swiper-slide">
+        <img src="Assets/project_5.png" alt="Nasdaq 100 Forex Market Power BI" class="portfolio-img" />
+        <div class="portfolio-data">
+          <h3 class="portfolio-title">Nasdaq 100 Forex Market Analysis – Power BI</h3>
+          <p class="portfolio-description">
+            Built a professional Power BI dashboard analyzing Nasdaq 100 and Forex data across multiple timeframes (1M, 1W, 1D, etc.).  
+            Identified profitable trading patterns and beginner-friendly timeframes using KPIs and interactive visuals.
+          </p>
+          <a href="https://github.com/adityabet/Nasqad-100-Forex-Market-Analysis-Dashbboard" target="_blank" class="button button-flex button-small portfolio-button">
+            View Project
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 6: Stock Market Prediction Dashboard -->
+<div class="portfolio-content grid swiper-slide">
+  <img src="Assets/project_6.jpg" alt="Stock Market Prediction Dashboard" class="portfolio-img" />
+  <div class="portfolio-data">
+    <h3 class="portfolio-title">Stock Market Prediction Dashboard – Python & ML</h3>
+    <p class="portfolio-description">
+      Developed an AI-powered stock analytics dashboard using Python and Streamlit.  
+      Implemented technical indicators (MA100, MA200, RSI) and built a Linear Regression 
+      time-series model to predict next-day stock prices with automated BUY/SELL signals.
+    </p>
+    <a href="https://github.com/adityabet/Stock-Prediction-Dashboard" 
+       target="_blank" 
+       class="button button-flex button-small portfolio-button">
+      View Project
+    </a>
+  </div>
+</div>
+
+    </div>
+
+    <div class="swiper-button-next"><i class="fa-solid fa-angle-right swiper-icon"></i></div>
+    <div class="swiper-button-prev"><i class="fa-solid fa-angle-left swiper-icon"></i></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+
+
+    <!-- Contact -->
+    <section class="contact section" id="contact" data-aos="fade-up" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+      <h2 class="section-title">Contact me</h2>
+      <span class="section-subtitle">Get in touch</span>
+      <div class="contact-container container" style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; align-items: center; margin-top: 2rem;">
+        <div class="contact-info">
+          <i class="fa-regular fa-envelope contact-icon"></i>
+          <div>
+            <h3 class="contact-title">Email</h3>
+            <a href="mailto:adityabet214@gmail.com" class="contact-subtitle">adityabet214@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-info">
+          <i class="fa-brands fa-linkedin-in contact-icon"></i>
+          <div>
+            <h3 class="contact-title">LinkedIn</h3>
+            <a href="https://linkedin.com/in/aditya-bet-592372219" class="contact-subtitle" target="_blank">Aditya Bet</a>
+          </div>
+        </div>
+        <div class="contact-info">
+          <i class="fa-brands fa-whatsapp contact-icon"></i>
+          <div>
+            <h3 class="contact-title">WhatsApp</h3>
+            <a href="https://wa.me/917083353166?text=Hi%20Aditya%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect!" class="contact-subtitle" target="_blank">Message me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" data-aos="fade-up">
+    <div class="footer-bg">
+      <div class="footer-container container grid" style="align-items: center; justify-content: space-between;">
+          <ul class="footer-links" style="display: flex; gap: 1.2rem;">
+          <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+          <li><a href="#contact" class="footer-link">Contact</a></li>
+        </ul>
+        <div class="footer-socials" style="display: flex; gap: 0.6rem;">
+          <a href="https://linkedin.com/in/aditya-bet-592372219" target="_blank" class="footer-social"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/adityabet" target="_blank" class="footer-social"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.instagram.com/aditya_bet_._/?hl=en" target="_blank" class="footer-social"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/917083353166?text=Hi%20Aditya%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" class="home-social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+      <p class="footer-copy" style="text-align: center; margin-top: 1.5rem;">Design By - Aditya Bet</p>
+    </div>
+  </footer>
+
+  <!-- Scroll Up Button -->
+  <a href="#home" class="scrollup" id="scroll-up"><i class="fa-solid fa-arrow-up scroll-up-icon"></i></a>
+
+  <!-- Scripts -->
+  <script src="Libraries/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      offset: 120,
+      once: true
+    });
+  </script>
+</body>
+</html>
